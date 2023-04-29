@@ -1,13 +1,15 @@
 import { useQuery } from "react-query";
 
 import { MovieType } from "../types/types";
-import api from "./api";
+
+import axios from "axios";
+
 
 type FetchMovieById = (movieId: string) => Promise<MovieType>;
 
 const fetchMovie: FetchMovieById = async (movieId: string) => {
-  const response = await api.get(
-    `/movie/${movieId}?api_key=${process.env.REACT_APP_API_KEY}`
+  const response = await axios.get(
+    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${import.meta.env.VITE_SOME_KEY}`
   );
 
   return response.data;
