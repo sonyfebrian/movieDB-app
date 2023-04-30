@@ -6,7 +6,7 @@ export type MovieType = {
     vote_average: number;
     vote_count: number;
     popularity: number;
-    release_date: string;
+
     runtime: number;
     genres: Array<{ id: number; name: string }>;
     video:boolean;

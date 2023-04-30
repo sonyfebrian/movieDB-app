@@ -1,9 +1,8 @@
-import { FiArrowLeft } from "react-icons/fi";
-import { AiFillStar } from "react-icons/ai";
+
 import { useNavigate, useParams } from "react-router-dom";
 
 import useFetchMovieById from "../../services/FetchMovie";
-import "./style.css"
+
 
 
 const Movie = () => {

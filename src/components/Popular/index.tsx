@@ -45,14 +45,14 @@ const Popular = () => {
 
                     <div className="grid grid-flow-col gap-2 overflow-x-auto mt-3 mx-3 pb-2 scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-gray-300 scrollbar-track-gray-200 dark:scrollbar-track-gray-700 dark:scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-400 dark:hover:scrollbar-thumb-gray-300">
                         {movies?.map(
-                            ({ id, poster_path, original_title, release_date }: MovieCardData, i) => {
+                            ({ id, poster_path, original_title }: MovieCardData, i) => {
                                 return (
                                     <Card
                                         key={i}
                                         id={id}
                                         poster_path={poster_path}
                                         original_title={original_title}
-                                        release_date={release_date}
+
 
                                     />
                                 );

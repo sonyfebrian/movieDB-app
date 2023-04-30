@@ -4,7 +4,7 @@ import Card, { MovieCardData } from "../../components/Card";
 import { FiArrowLeft } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
-import "./style.css"
+
 
 const Favorites = () => {
     const { movies } = useAppSelector((state) => state.favorites);
