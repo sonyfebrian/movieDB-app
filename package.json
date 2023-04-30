@@ -12,13 +12,16 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/lodash": "^4.14.194",
     "axios": "^1.4.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-query": "^3.39.3",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.11.0"
+    "react-router-dom": "^6.11.0",
+    "react-toastify": "^9.1.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

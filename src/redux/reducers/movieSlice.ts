@@ -1,10 +1,10 @@
-import { MovieType } from './../../types/types';
+import { MovieType, } from './../../types/types';
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 
 type Movie = Omit<
   MovieType,
-  "overview" | "vote_average" | "release_date" | "runtime" | "genres"
+  "overview" | "vote_average" | "runtime" | "genres" | "vote_count" | "popularity" |"video" | "backdrop_path" | "genre_ids" | "adult" | "total_pages" | "total_results" | "page"
 >;
 
 interface FavoriteState {
